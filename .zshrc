@@ -3,7 +3,9 @@ source $HOME/.antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
+antigen bundle gitignore
 antigen bundle asdf
+antigen bundle rails
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
