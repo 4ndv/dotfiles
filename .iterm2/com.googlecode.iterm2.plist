@@ -19,7 +19,7 @@
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
-	<true/>
+	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Pictures</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -68,7 +68,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>406 245 799 448 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>399 218 810 592 0 0 1920 1057 </string>
+	<string>399 196 810 613 0 0 1920 1080 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -988,12 +988,12 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{348, 635}</string>
+		<string>{708, 662}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>1D130564-2E2D-4110-A6C4-9EB41496C983</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>16</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
