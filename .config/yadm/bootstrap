@@ -7,6 +7,14 @@ system_type=$(uname -s)
 if [ "$system_type" = "Darwin" ]; then
   if [ -d "$HOME/.iterm2" ]; then
     echo "Setting iTerm preference folder"
-    defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
+    defaults write com.googlecode.iterm2 PrefsCustomFolder "~/.iterm2"
   fi
+fi
+
+# Install antigen at .antigen/antigen.zsh
+if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
+  echo "Installing antigen"
+
+  mkdir -p $HOME/.antigen
+  curl -L git.io/antigen > $HOME/.antigen/antigen.zsh
 fi
