@@ -21,7 +21,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Pictures</string>
+	<string>~/.iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -66,9 +66,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>406 245 799 448 0 0 1920 1057 </string>
+	<string>774 136 799 448 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>399 196 810 613 0 0 1920 1080 </string>
+	<string>259 164 810 613 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -232,7 +232,11 @@
 				<real>0.0</real>
 			</dict>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/lynx/.iterm2/wp.jpg</string>
+			<key>Background Image Mode</key>
+			<integer>2</integer>
+			<key>Blend</key>
+			<real>0.13464481314432997</real>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -993,7 +997,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1D130564-2E2D-4110-A6C4-9EB41496C983</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>16</integer>
+	<integer>21</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
