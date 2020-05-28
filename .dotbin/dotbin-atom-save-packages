@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if ! hash apm 2>/dev/null; then
+  echo "apm not installed, install shell additions from atom"
+  exit 1
+fi
+
+echo "Writing installed packages list to ~/.atom/packages.txt"
+
+apm list --installed --bare > ~/.atom/packages.txt

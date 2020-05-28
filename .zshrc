@@ -16,3 +16,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme vercel/zsh-theme vercel.zsh-theme
 
 antigen apply
+
+# Adding .dotbin to $PATH
+export PATH=$HOME/.dotbin:$PATH

@@ -20,5 +20,13 @@ if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
   curl -L git.io/antigen > $HOME/.antigen/antigen.zsh
 fi
 
+echo "Restoring atom packages"
+
+if ! hash apm 2>/dev/null; then
+  echo "[!] apm not installed, install shell additions from atom"
+else
+  bash ~/.dotbin/dotbin-atom-restore-packages
+fi
+
 echo
 echo "[!] Restart terminal for changes to take effect"
