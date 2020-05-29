@@ -6,6 +6,7 @@ antigen bundle git
 antigen bundle gitignore
 antigen bundle asdf
 antigen bundle rails
+antigen bundle fzf
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
@@ -16,6 +17,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme vercel/zsh-theme vercel.zsh-theme
 
 antigen apply
+
+# Vercel theme prompt without hostname
+PROMPT='$logo $dir $(git_prompt)'
 
 # Adding .dotbin to $PATH
 export PATH=$HOME/.dotbin:$PATH
