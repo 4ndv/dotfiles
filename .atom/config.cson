@@ -4,6 +4,11 @@
       "exception-reporting"
     ]
     telemetryConsent: "no"
+  editor:
+    fontSize: 18
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
   "exception-reporting":
     userId: "74db0cb7-67c9-4343-bd99-154e84c1d2e1"
   minimap:
