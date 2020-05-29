@@ -14,6 +14,20 @@ if [ "$system_type" = "Darwin" ]; then
     echo "Setting iTerm preference folder"
     defaults write com.googlecode.iterm2 PrefsCustomFolder "~/.iterm2"
     defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder 1
+    echo
+  fi
+
+  # install homebrew if it's missing
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "Installing homebrew"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo
+  fi
+
+  if [ -f "$HOME/.Brewfile" ]; then
+    echo "Updating homebrew bundle"
+    brew bundle --global
+    echo
   fi
 fi
 
@@ -23,6 +37,7 @@ if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
 
   mkdir -p $HOME/.antigen
   curl -L git.io/antigen > $HOME/.antigen/antigen.zsh
+  echo
 fi
 
 echo "Restoring atom packages"
@@ -31,7 +46,17 @@ if ! hash apm 2>/dev/null; then
   echo "[!] apm not installed, install shell additions from atom"
 else
   bash ~/.dotbin/dotbin-atom-restore-packages
+  echo
 fi
 
+if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
+  echo "Installing Vundle"
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  echo
+fi
+
+echo "Installing Vundle plugins"
+vim +PluginInstall +qall
 echo
+
 echo "[!] Restart terminal for changes to take effect"
