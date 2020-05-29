@@ -1,4 +1,6 @@
+"
 " VUNDLE START
+"
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -14,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 " PLUGINS
 " Tree view
 Plugin 'preservim/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
 
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
@@ -31,10 +34,12 @@ Plugin 'vim-scripts/taglist.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+"
 " VUNDLE END
+"
 
 " Toggle NERDTree with Ctrl+\
-map <C-Bslash> :NERDTreeToggle<CR>
+map <C-Bslash> :NERDTreeTabsToggle<CR>
 
 " Line numbers
 set nu
@@ -56,3 +61,19 @@ set smartindent
 
 " Disable swap
 set noswapfile
+
+"
+" Git Gutter
+"
+set updatetime=100
+" No mapping
+let g:gitgutter_map_keys = 0
+" Colors
+let g:gitgutter_override_sign_column_highlight = 0
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=4
+" Always show column
+set signcolumn=yes
