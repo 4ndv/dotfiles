@@ -14,7 +14,7 @@ antigen bundle zsh-users/zsh-completions
 # Must be the last bundle
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme vercel/zsh-theme vercel.zsh-theme
+antigen theme vercel/zsh-theme
 
 antigen apply
 
