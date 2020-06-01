@@ -1,0 +1,17 @@
+{
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "boundary",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderControlCharacters": true,
+    "workbench.tree.renderIndentGuides": "always",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Atomize",
+    "window.zoomLevel": 0.3,
+    "workbench.activityBar.visible": false
+}

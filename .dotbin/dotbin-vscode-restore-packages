@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if ! hash code 2>/dev/null; then
+  echo "code command not installed, install shell additions from vscode"
+  exit 1
+fi
+
+echo "Restoring vscode packages from ~/.vscode/packages.txt"
+
+cat ~/.vscode/packages.txt | xargs -L 1 code --install-extension

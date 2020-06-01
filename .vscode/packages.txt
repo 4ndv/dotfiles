@@ -1,0 +1,5 @@
+bungcip.better-toml
+emroussel.atomize-atom-one-dark-theme
+ms-vscode.atom-keybindings
+rust-lang.rust
+serayuzgur.crates

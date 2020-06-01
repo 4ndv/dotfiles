@@ -5,6 +5,6 @@ if ! hash apm 2>/dev/null; then
   exit 1
 fi
 
-echo "Writing installed packages list to ~/.atom/packages.txt"
+echo "Writing atom installed packages list to ~/.atom/packages.txt"
 
 apm list --installed --bare > ~/.atom/packages.txt

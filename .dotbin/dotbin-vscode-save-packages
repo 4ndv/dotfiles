@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if ! hash code 2>/dev/null; then
+  echo "code command not installed, install shell additions from vscode"
+  exit 1
+fi
+
+echo "Writing vscode installed packages list to ~/.vscode/packages.txt"
+
+code --list-extensions > ~/.vscode/packages.txt
