@@ -17,6 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Tree view
 Plugin 'preservim/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
