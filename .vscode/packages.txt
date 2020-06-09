@@ -1,5 +1,11 @@
 bungcip.better-toml
+DavidAnson.vscode-markdownlint
+dbaeumer.vscode-eslint
+eamodio.gitlens
 emroussel.atomize-atom-one-dark-theme
 ms-vscode.atom-keybindings
+ms-vscode.Go
+rebornix.ruby
 rust-lang.rust
 serayuzgur.crates
+wingrunr21.vscode-ruby

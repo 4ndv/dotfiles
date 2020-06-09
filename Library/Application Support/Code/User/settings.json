@@ -13,5 +13,19 @@
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Atomize",
     "window.zoomLevel": 0.3,
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "telemetry.enableTelemetry": false,
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.useLanguageServer": true,
+    "gitlens.statusBar.enabled": false,
+    "git.autofetch": true,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "ruby.intellisense": "rubyLocate",
+    "ruby.format": "rubocop",
+    "ruby.useBundler": true,
+    "ruby.lint": {
+        "rubocop": true
+    }
 }
