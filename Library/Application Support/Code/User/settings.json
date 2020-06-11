@@ -13,7 +13,6 @@
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Atomize",
     "window.zoomLevel": 0.3,
-    "workbench.activityBar.visible": false,
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "ruby.codeCompletion": "rcodetools",
