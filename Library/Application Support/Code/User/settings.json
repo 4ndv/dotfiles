@@ -12,7 +12,7 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Atomize",
-    "window.zoomLevel": 0.3,
+    "window.zoomLevel": 0,
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "ruby.codeCompletion": "rcodetools",
@@ -22,9 +22,13 @@
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "ruby.intellisense": "rubyLocate",
-    "ruby.format": "rubocop",
     "ruby.useBundler": true,
     "ruby.lint": {
         "rubocop": true
-    }
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+    "discord.detailsEditing": "Fucking around {filename}",
+    "discord.lowerDetailsEditing": "{null}"
 }

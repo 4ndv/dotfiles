@@ -3,6 +3,8 @@ DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 eamodio.gitlens
 emroussel.atomize-atom-one-dark-theme
+golang.go
+karunamurti.haml
 ms-vscode.atom-keybindings
 pnp.polacode
 rebornix.ruby
