@@ -69,3 +69,4 @@ vim +PluginInstall +qall
 echo
 
 echo "[!] Restart terminal for changes to take effect"
+echo "[!] Then run this: compaudit | xargs chmod g-w"
