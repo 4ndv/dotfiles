@@ -23,3 +23,6 @@ PROMPT='$logo $dir $(git_prompt)'
 
 # Adding .dotbin to $PATH
 export PATH=$HOME/.dotbin:$PATH
+
+# Наёбта (yota)
+alias nayobta='sudo sysctl -w net.inet.ip.ttl=65'

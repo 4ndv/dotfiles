@@ -1,3 +1,8 @@
 brew "asdf"
 brew "fzf"
 brew "ctags"
+brew "coreutils"
+brew "gnumeric"
+brew "imagemagick"
+brew "postgresql"
+brew "jq"

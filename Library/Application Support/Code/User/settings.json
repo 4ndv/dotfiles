@@ -27,8 +27,8 @@
         "rubocop": true
     },
     "eslint.alwaysShowStatus": true,
-    "eslint.format.enable": true,
     "editor.formatOnSave": true,
     "discord.detailsEditing": "Fucking around {filename}",
-    "discord.lowerDetailsEditing": "{null}"
+    "discord.lowerDetailsEditing": "{null}",
+    "git.suggestSmartCommit": false
 }
