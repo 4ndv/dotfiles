@@ -1,6 +1,0 @@
-linter@2.1.1
-linter-eslint@8.5.5
-linter-rubocop@2.5.7
-minimap@4.29.9
-minimap-linter@2.2.1
-

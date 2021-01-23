@@ -4,6 +4,7 @@
 
 system_type=$(uname -s)
 
+# Only for macOS
 if [ "$system_type" = "Darwin" ]; then
   if [ -d "$HOME/.iterm2" ]; then
     if [ ! -f "$HOME/.iterm2/wp.jpg" ]; then
@@ -40,15 +41,6 @@ if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
   echo
 fi
 
-echo "Restoring atom packages"
-
-if ! hash apm 2>/dev/null; then
-  echo "[!] apm not installed, install shell additions from atom"
-else
-  bash ~/.dotbin/dotbin-atom-restore-packages
-  echo
-fi
-
 echo "Restoring vscode packages"
 
 if ! hash code 2>/dev/null; then
@@ -69,4 +61,7 @@ vim +PluginInstall +qall
 echo
 
 echo "[!] Restart terminal for changes to take effect"
-echo "[!] Then run this: compaudit | xargs chmod g-w"
+
+if [ "$system_type" = "Darwin" ]; then
+  echo "[!] Then run this: compaudit | xargs chmod g-w"
+fi
