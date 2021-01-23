@@ -1,4 +1,5 @@
 bungcip.better-toml
+ctf0.close-tabs-to-the-left
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 eamodio.gitlens
