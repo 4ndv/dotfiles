@@ -35,6 +35,8 @@ fi
 # Only for Linux
 if [ "$system_type" = "Linux" ]; then
   # Link vscode config to the same folder as on mac
+  rm "$HOME/.config/Code - OSS/User/settings.json"
+  rm "$HOME/.config/Code/User/settings.json"
   ln "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code - OSS/User/settings.json"
   ln "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
 fi
