@@ -13,6 +13,7 @@
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Atomize",
     "window.zoomLevel": 0,
+    "window.titleBarStyle": "custom",
     "gitlens.advanced.telemetry.enabled": false,
     "telemetry.enableTelemetry": false,
     "ruby.codeCompletion": "rcodetools",
@@ -30,5 +31,7 @@
     "editor.formatOnSave": true,
     "discord.detailsEditing": "Fucking around {filename}",
     "discord.lowerDetailsEditing": "{null}",
-    "git.suggestSmartCommit": false
+    "git.suggestSmartCommit": false,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true
 }
