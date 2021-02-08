@@ -32,30 +32,12 @@ if [ "$system_type" = "Darwin" ]; then
   fi
 fi
 
-# Only for Linux
-if [ "$system_type" = "Linux" ]; then
-  # Link vscode config to the same folder as on mac
-  rm "$HOME/.config/Code - OSS/User/settings.json"
-  rm "$HOME/.config/Code/User/settings.json"
-  ln "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code - OSS/User/settings.json"
-  ln "$HOME/Library/Application Support/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
-fi
-
 # Install antigen at .antigen/antigen.zsh
 if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
   echo "Installing antigen"
 
   mkdir -p $HOME/.antigen
   curl -L git.io/antigen > $HOME/.antigen/antigen.zsh
-  echo
-fi
-
-echo "Restoring vscode packages"
-
-if ! hash code 2>/dev/null; then
-  echo "[!] code command not installed, install shell additions from vscode"
-else
-  bash ~/.dotbin/dotbin-vscode-restore-packages
   echo
 fi
 
