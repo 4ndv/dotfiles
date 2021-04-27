@@ -34,3 +34,8 @@ fi
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
   source /etc/profile.d/vte.sh
 fi
+
+alias gfmm='git fetch origin master:master'
+
+# Editor for bundle open
+export BUNDLER_EDITOR=code
