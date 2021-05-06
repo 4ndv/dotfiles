@@ -39,3 +39,5 @@ alias gfmm='git fetch origin master:master'
 
 # Editor for bundle open
 export BUNDLER_EDITOR=code
+
+alias bs='brew services'
