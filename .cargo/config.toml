@@ -1,0 +1,6 @@
+[alias]
+brr = "run"
+brrr = "run --release"
+brrrr = "build"
+brrrrr = "build --release"
+lint = "check"

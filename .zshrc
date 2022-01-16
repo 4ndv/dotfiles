@@ -36,8 +36,17 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 alias gfmm='git fetch origin master:master'
+alias bs='brew services'
+alias rpry='pry -r ./config/environment'
 
 # Editor for bundle open
 export BUNDLER_EDITOR=code
 
-alias bs='brew services'
+# Local overrides
+if test -f "~/.zshrc.local"; then
+  source ~/.zshrc.local
+fi
+
+if test -f "~/.cargo/env"; then
+  source $HOME/.cargo/env
+fi
