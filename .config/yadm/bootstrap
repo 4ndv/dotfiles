@@ -6,18 +6,6 @@ system_type=$(uname -s)
 
 # Only for macOS
 if [ "$system_type" = "Darwin" ]; then
-  if [ -d "$HOME/.iterm2" ]; then
-    if [ ! -f "$HOME/.iterm2/wp.jpg" ]; then
-      echo "Downloading anime wallpaper"
-      curl https://static.zerochan.net/Konoe.full.1709831.jpg --output $HOME/.iterm2/wp.jpg
-    fi
-
-    echo "Setting iTerm preference folder"
-    defaults write com.googlecode.iterm2 PrefsCustomFolder "~/.iterm2"
-    defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder 1
-    echo
-  fi
-
   # install homebrew if it's missing
   if ! command -v brew >/dev/null 2>&1; then
     echo "Installing homebrew"

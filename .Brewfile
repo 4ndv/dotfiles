@@ -1,5 +1,4 @@
 brew "asdf"
-brew "fzf"
 brew "ctags"
 brew "coreutils"
 brew "gnumeric"

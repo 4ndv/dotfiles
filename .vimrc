@@ -22,10 +22,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
 
-" Fuzzy search
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-
 " Git stuff in gutter
 Plugin 'airblade/vim-gitgutter'
 

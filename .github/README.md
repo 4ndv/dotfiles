@@ -4,10 +4,9 @@ dotfiles
 # Requirements:
 
 - zsh
-- brew
+- brew (mac only)
 - yadm
 - ctags
-- fzf
 
 # Installation
 
