@@ -37,9 +37,12 @@ fi
 alias gfmm='git fetch origin master:master'
 alias bs='brew services'
 alias rpry='pry -r ./config/environment'
+alias rspec-changed='bundle exec rspec $(git diff --name-only "spec/**/*_spec.rb")'
 
 # Editor for bundle open
-export BUNDLER_EDITOR=code
+export BUNDLER_EDITOR=nvim
+
+alias vim=nvim
 
 # Local overrides
 if test -f "~/.zshrc.local"; then

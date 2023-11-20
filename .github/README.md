@@ -3,6 +3,7 @@ dotfiles
 
 # Requirements:
 
+- neovim
 - zsh
 - brew (mac only)
 - yadm
@@ -17,6 +18,6 @@ yadm bootstrap
 
 Bootstrap will:
 
-- Set iTerm preferences folder to `~/.iterm2`
 - Install antigen at `~/.antigen/antigen.zsh`
+- Install NvChad at `~/.config/nvim`
 

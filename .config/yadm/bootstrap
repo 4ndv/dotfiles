@@ -29,15 +29,15 @@ if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
   echo
 fi
 
-if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
-  echo "Installing Vundle"
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d "$HOME/.config/nvim" ]; then
+  echo "Installing NvChad"
+
+  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
   echo
 fi
 
-echo "Installing Vundle plugins"
-vim +PluginInstall +qall
-echo
+# Link nvim-custom
+ln -s ~/.config/nvim-custom ~/.config/nvim/lua/custom
 
 echo "[!] Restart terminal for changes to take effect"
 
