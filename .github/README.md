@@ -7,7 +7,6 @@ dotfiles
 - zsh
 - iTerm 2, brew (mac only)
 - yadm
-- ctags
 
 # Installation
 
