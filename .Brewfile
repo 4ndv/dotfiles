@@ -1,6 +1,6 @@
 brew "ripgrep"
 brew "asdf"
-brew "neovim"
+brew "helix"
 brew "ctags"
 brew "coreutils"
 brew "gnumeric"

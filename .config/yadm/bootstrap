@@ -29,16 +29,6 @@ if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
   echo
 fi
 
-if [ ! -d "$HOME/.config/nvim" ]; then
-  echo "Installing NvChad"
-
-  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-  echo
-fi
-
-# Link nvim-custom
-ln -s ~/.config/nvim-custom ~/.config/nvim/lua/custom
-
 echo "[!] Restart terminal for changes to take effect"
 
 if [ "$system_type" = "Darwin" ]; then

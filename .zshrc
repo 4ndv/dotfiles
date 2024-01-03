@@ -40,9 +40,9 @@ alias rpry='pry -r ./config/environment'
 alias rspec-changed='bundle exec rspec $(git diff --name-only "spec/**/*_spec.rb")'
 
 # Editor for bundle open
-export BUNDLER_EDITOR=nvim
+export BUNDLER_EDITOR=hx
 
-alias vim=nvim
+alias vim=hx
 
 # Local overrides
 if test -f "~/.zshrc.local"; then

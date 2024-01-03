@@ -3,9 +3,9 @@ dotfiles
 
 # Requirements:
 
-- neovim
+- helix
 - zsh
-- brew (mac only)
+- iTerm 2, brew (mac only)
 - yadm
 - ctags
 
@@ -19,5 +19,8 @@ yadm bootstrap
 Bootstrap will:
 
 - Install antigen at `~/.antigen/antigen.zsh`
-- Install NvChad at `~/.config/nvim`
 
+On macOS:
+
+- Make iTerm 2 use config from `~/.iterm2` folder
+- Install everything from `.Brewfile`

@@ -1,0 +1,21 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+mouse = false
+insert-final-newline = true
+bufferline = "multiple"
+
+# Disable arrows for insert mode
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+
+# Disable arrows for normal mode
+[keys.normal]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
