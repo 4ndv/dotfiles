@@ -6,6 +6,12 @@ mouse = false
 insert-final-newline = true
 bufferline = "multiple"
 
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "all"
+newline = "none"
+
 # Disable arrows for insert mode
 [keys.insert]
 up = "no_op"
