@@ -39,6 +39,9 @@ alias bs='brew services'
 alias rpry='pry -r ./config/environment'
 alias rspec-changed='bundle exec rspec $(git diff --name-only "spec/**/*_spec.rb")'
 
+# Helix as a global editor
+export EDITOR=hx
+
 # Editor for bundle open
 export BUNDLER_EDITOR=hx
 

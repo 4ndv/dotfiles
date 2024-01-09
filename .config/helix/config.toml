@@ -6,6 +6,9 @@ mouse = false
 insert-final-newline = true
 bufferline = "multiple"
 
+[editor.file-picker]
+hidden = false
+
 [editor.whitespace.render]
 space = "all"
 tab = "all"
