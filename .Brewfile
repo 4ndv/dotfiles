@@ -1,6 +1,6 @@
 brew "ripgrep"
 brew "asdf"
-brew "helix"
+brew "helix", args: ["HEAD"]
 brew "ctags"
 brew "coreutils"
 brew "gnumeric"
