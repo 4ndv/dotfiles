@@ -5,7 +5,8 @@ dotfiles
 
 - helix
 - zsh
-- iTerm 2, brew (mac only)
+- Wezterm/iTerm 2
+- brew (mac only)
 - yadm
 
 # Installation
