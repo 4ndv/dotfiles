@@ -5,6 +5,7 @@ line-number = "relative"
 mouse = false
 insert-final-newline = true
 bufferline = "multiple"
+true-color = true
 
 [editor.file-picker]
 hidden = false
