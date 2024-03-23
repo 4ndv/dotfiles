@@ -18,7 +18,9 @@ antigen theme vercel/zsh-theme
 antigen apply
 
 # Vercel theme prompt without hostname
-PROMPT='$logo $dir $(git_prompt)'
+if [[ ! -a "$HOME/.showhostname" ]]; then
+  PROMPT='$logo $dir $(git_prompt)'
+fi
 
 # Adding .dotbin to $PATH
 export PATH=$HOME/.dotbin:$PATH
@@ -48,10 +50,7 @@ export EDITOR=hx
 export BUNDLER_EDITOR=hx
 
 # Local overrides
-if test -f "~/.zshrc.local"; then
-  source ~/.zshrc.local
-fi
+[[ -a "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
-if test -f "~/.cargo/env"; then
-  source $HOME/.cargo/env
-fi
+# Cargo env
+[[ -a "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
