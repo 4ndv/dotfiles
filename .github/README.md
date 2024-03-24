@@ -3,6 +3,8 @@ dotfiles
 
 # Requirements:
 
+- rust
+- zellij
 - helix
 - zsh
 - Wezterm/iTerm 2
