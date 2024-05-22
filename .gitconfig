@@ -5,3 +5,5 @@
 	email = andreyviktorov@outlook.com
 [pull]
 	rebase = false
+[alias]
+	purr = pull --rebase
