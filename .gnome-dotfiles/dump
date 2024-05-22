@@ -1,0 +1,7 @@
+#! /bin/bash
+
+dconf dump /org/gnome/shell/keybindings/ > ~/.gnome-dotfiles/configs/org.gnome.shell.keybindings.ini
+dconf dump /org/gnome/mutter/ > ~/.gnome-dotfiles/configs/org.gnome.mutter.ini
+dconf dump /org/gnome/shell/extensions/forge/ > ~/.gnome-dotfiles/configs/org.gnome.shell.extensions.forge.ini
+dconf dump /org/gnome/desktop/input-sources/ > ~/.gnome-dotfiles/configs/org.gnome.desktop.input-sources.ini
+dconf dump /org/gnome/desktop/wm/preferences/ > ~/.gnome-dotfiles/configs/org.gnome.desktop.wm.preferences.ini
