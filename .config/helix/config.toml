@@ -16,6 +16,9 @@ tab = "all"
 nbsp = "all"
 newline = "none"
 
+[editor.soft-wrap]
+enable = true
+
 # Disable arrows for insert mode
 [keys.insert]
 up = "no_op"
