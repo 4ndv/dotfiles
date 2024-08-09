@@ -13,6 +13,7 @@ dotfiles
 - yazi
 - fzf
 - zoxide
+- fd
 
 # MacOS-related dependencies and configs
 
