@@ -53,3 +53,7 @@ export BUNDLER_EDITOR=hx
 
 # Cargo env
 [[ -a "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+# fzf and zoxide
+source <(fzf --zsh)
+eval "$(zoxide init zsh)"

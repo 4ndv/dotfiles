@@ -11,6 +11,8 @@ dotfiles
 - brew (mac only)
 - yadm
 - yazi
+- fzf
+- zoxide
 
 # MacOS-related dependencies and configs
 
