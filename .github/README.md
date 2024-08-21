@@ -14,6 +14,8 @@ dotfiles
 - fzf
 - zoxide
 - fd
+- ripgrep
+- serpl
 
 # MacOS-related dependencies and configs
 
