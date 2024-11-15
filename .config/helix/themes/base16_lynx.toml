@@ -68,3 +68,6 @@ inherits = "base16_default"
 
 # Picker active item
 "ui.text.focus" = { bg = "gray", fg = "white", modifiers = ["bold"] }
+
+# Window dividers
+"ui.window" = "gray"
