@@ -5,11 +5,12 @@ inherits = "base16_default"
 "string.regexp" = "magenta"
 "string.special" = "blue"
 "string.special.symbol" = "red"
+"variable" = "default"
 "variable.other.member" = "blue"
 "variable.builtin" = "magenta"
 
 # Make function args italic
-"variable.parameter" = { modifiers = ["italic"] }
+"variable.parameter" = { fg = "red", modifiers = ["italic"] }
 
 # Italic comments
 "comment" = { fg = "light-gray", modifiers = ["italic"] }
