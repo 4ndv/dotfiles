@@ -1,0 +1,70 @@
+inherits = "base16_default"
+
+# Colors for tokens
+"string" = "green"
+"string.regexp" = "magenta"
+"string.special" = "blue"
+"string.special.symbol" = "red"
+"variable.other.member" = "blue"
+"variable.builtin" = "magenta"
+
+# Make function args italic
+"variable.parameter" = { modifiers = ["italic"] }
+
+# Italic comments
+"comment" = { fg = "light-gray", modifiers = ["italic"] }
+
+# Italic conditionals with proper color
+"keyword.control.conditional" = { fg = "magenta", modifiers = ["italic"] }
+
+# Italic namespaces with proper color
+"namespace" = { fg = "magenta", modifiers = ["italic"] }
+
+# Markup styles
+"markup.heading.marker" = { modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+
+# Transparent gutter
+"ui.gutter" = {}
+"ui.linenr" = { fg = "gray" }
+"ui.linenr.selected" = { fg = "default", "modifiers" = ["bold"] }
+
+# Non-italic whitespace characters
+"ui.virtual.whitespace" = { fg = "gray" }
+
+# Invert menu
+"ui.menu" = { fg = "light-gray" }
+"ui.menu.selected" = { fg = "yellow", modifiers = ["bold"] }
+
+# Invert help
+"ui.help" = { fg = "default" }
+
+# Invert popup
+"ui.popup" = { fg = "default" }
+
+# Transparent statusline
+"ui.statusline" = {}
+"ui.statusline.inactive" = { bg = "gray" }
+
+# Mode colors
+"ui.statusline.normal" = { modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "green", modifiers = ["bold"]  }
+"ui.statusline.select" = { fg = "yellow", modifiers = ["bold"]  }
+
+# Invert bufferline
+"ui.bufferline" = { fg = "gray" }
+"ui.bufferline.active" = { fg = "yellow" }
+
+# Cursors
+"ui.cursor" = { fg = "default", modifiers = ["reversed"] }
+"ui.cursor.primary.insert" = { fg = "black", bg = "green" }
+"ui.cursor.primary.select" = { fg = "black", bg = "yellow" }
+"ui.cursor.match" = { fg = "yellow", modifiers = ["bold"] }
+
+# Non-blue selection
+"ui.selection" = { bg = "gray", fg = "white" }
+"ui.selection.primary" = { bg = "gray", fg = "white", modifiers = ["bold"] }
+
+# Picker active item
+"ui.text.focus" = { bg = "gray", fg = "white", modifiers = ["bold"] }
