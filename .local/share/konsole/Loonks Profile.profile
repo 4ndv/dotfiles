@@ -1,7 +1,7 @@
 [Appearance]
-ColorScheme=Breeze
+ColorScheme=Catppuccin-Mocha
 DimmValue=6
-Font=Hack,12,-1,7,50,0,0,0,0,0
+Font=Fira Code,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [General]
 Command=/bin/zsh
