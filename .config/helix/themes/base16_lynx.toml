@@ -5,9 +5,13 @@ inherits = "base16_default"
 "string.regexp" = "magenta"
 "string.special" = "blue"
 "string.special.symbol" = "red"
+"constructor" = "cyan"
 "variable" = "default"
 "variable.other.member" = "blue"
 "variable.builtin" = "magenta"
+
+# Highlight interpolation
+"punctuation.special" = "light-blue"
 
 # Make function args italic
 "variable.parameter" = { fg = "red", modifiers = ["italic"] }
