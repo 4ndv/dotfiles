@@ -6,6 +6,7 @@ mouse = false
 insert-final-newline = true
 bufferline = "multiple"
 true-color = true
+color-modes = true
 
 [editor.file-picker]
 hidden = false
