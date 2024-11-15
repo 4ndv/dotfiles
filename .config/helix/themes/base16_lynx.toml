@@ -48,9 +48,9 @@ inherits = "base16_default"
 "ui.statusline.inactive" = { bg = "gray" }
 
 # Mode colors
-"ui.statusline.normal" = { modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "green", modifiers = ["bold"]  }
-"ui.statusline.select" = { fg = "yellow", modifiers = ["bold"]  }
+"ui.statusline.normal" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black", bg = "green", modifiers = ["bold"]  }
+"ui.statusline.select" = { fg = "black", bg = "yellow", modifiers = ["bold"]  }
 
 # Invert bufferline
 "ui.bufferline" = { fg = "gray" }
