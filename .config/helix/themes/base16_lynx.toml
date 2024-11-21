@@ -68,8 +68,8 @@ inherits = "base16_default"
 "ui.cursor.match" = { fg = "yellow", modifiers = ["bold"] }
 
 # Non-blue selection
-"ui.selection" = { bg = "gray", fg = "white" }
-"ui.selection.primary" = { bg = "gray", fg = "white", modifiers = ["bold"] }
+"ui.selection" = { bg = "gray" }
+"ui.selection.primary" = { bg = "gray", modifiers = ["bold"] }
 
 # Picker active item
 "ui.text.focus" = { bg = "gray", fg = "white", modifiers = ["bold"] }
