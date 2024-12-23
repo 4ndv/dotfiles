@@ -6,6 +6,8 @@ local is_linux = function()
   return wezterm.target_triple:find("linux") ~= nil
 end
 
+config.window_background_opacity = 0.9
+
 -- waiting for scaling to be fixed for that to properly work
 -- if is_linux() then
 --   config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
