@@ -23,7 +23,10 @@ dotfiles
 
 # Linux-related dependencies and configs
 
-- kitty
+- hyprland
+- hyprpaper
+- eww
+- wofi
 
 # Installation
 
