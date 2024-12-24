@@ -43,3 +43,8 @@ On macOS:
 
 - Make iTerm 2 use config from `~/.iterm2` folder
 - Install everything from `.Brewfile`
+
+# Linux-specific installation steps
+
+- Add monitors config at `~/.config/hypr/monitors.conf`
+- Add wallpaper config at `~/.config/hypr/hyprpaper.conf`
