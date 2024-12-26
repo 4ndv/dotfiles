@@ -12,7 +12,7 @@ window#waybar {
     transition: background-color .5s;
 }
 
-#modules-center: {
+.modules-center {
     padding: 0 10px;
 }
 
