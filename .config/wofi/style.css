@@ -1,0 +1,43 @@
+* {
+  font-family: "FiraCode Nerd Font Mono", sans-serif;
+  font-size: 16px;
+}
+
+#window {
+  margin: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  border: 2px solid #fb9fb1;
+}
+
+#input {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  margin: 10px 0;
+  margin-left: -10px;
+  padding: 0;
+}
+
+#input > image.left {
+  -gtk-icon-transform:scaleX(0);
+}
+
+#input > image.right {
+  -gtk-icon-transform:scaleX(0);
+}
+
+#text {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#entry {
+  padding: 10px;
+}
+
+#entry:selected {
+  color: #000;
+  background: #fb9fb1;
+}

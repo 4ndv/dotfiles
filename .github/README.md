@@ -25,8 +25,9 @@ dotfiles
 
 - hyprland
 - hyprpaper
-- eww
+- waybar
 - wofi
+- ttf-firacode-nerd
 
 # Installation
 
