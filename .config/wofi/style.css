@@ -11,6 +11,10 @@
   border: 2px solid #fb9fb1;
 }
 
+#outer-box {
+  margin: 10px;
+}
+
 #input {
   background: transparent;
   border: none;
@@ -21,11 +25,11 @@
 }
 
 #input > image.left {
-  -gtk-icon-transform:scaleX(0);
+  -gtk-icon-transform: scaleX(0);
 }
 
 #input > image.right {
-  -gtk-icon-transform:scaleX(0);
+  -gtk-icon-transform: scaleX(0);
 }
 
 #text {
@@ -35,6 +39,7 @@
 
 #entry {
   padding: 10px;
+  border-radius: 5px;
 }
 
 #entry:selected {
