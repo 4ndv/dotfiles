@@ -27,6 +27,7 @@ dotfiles
 - hyprpaper
 - waybar
 - wofi
+- dunst
 - ttf-firacode-nerd
 
 # Installation
