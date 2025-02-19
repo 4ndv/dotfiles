@@ -30,6 +30,8 @@ system_type=$(uname -s)
 if [ "$system_type" = "Darwin" ]; then
   # Наёбта (yota)
   alias nayobta='sudo sysctl -w net.inet.ip.ttl=65'
+
+  alias bs='brew services'
 fi
 
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
@@ -37,9 +39,7 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 alias gfmm='git fetch origin master:master'
-alias bs='brew services'
 alias rpry='pry -r ./config/environment'
-alias rspec-changed='bundle exec rspec $(git diff --name-only "spec/**/*_spec.rb")'
 alias lg='export XDG_CONFIG_HOME="$HOME/.config" && lazygit'
 alias yalg='export XDG_CONFIG_HOME="$HOME/.config" && yadm enter lazygit'
 alias be='bundle exec'
