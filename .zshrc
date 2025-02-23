@@ -42,6 +42,8 @@ alias rpry='pry -r ./config/environment'
 alias rspec-changed='bundle exec rspec $(git diff --name-only "spec/**/*_spec.rb")'
 alias lg='export XDG_CONFIG_HOME="$HOME/.config" && lazygit'
 alias be='bundle exec'
+alias hl='hledger -f $HOME/finance/main.journal -s'
+alias hlw='hledger-web -f $HOME/finance/main.journal -s'
 
 # Helix as a global editor
 export EDITOR=hx
