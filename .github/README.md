@@ -16,6 +16,7 @@ dotfiles
 - fd
 - ripgrep
 - serpl
+- rsync
 
 # MacOS-related dependencies and configs
 
@@ -23,11 +24,6 @@ dotfiles
 
 # Linux-related dependencies and configs
 
-- hyprland
-- hyprpaper
-- waybar
-- wofi
-- dunst
 - ttf-firacode-nerd
 
 # Installation
@@ -43,10 +39,4 @@ Bootstrap will:
 
 On macOS:
 
-- Make iTerm 2 use config from `~/.iterm2` folder
 - Install everything from `.Brewfile`
-
-# Linux-specific installation steps
-
-- Add monitors config at `~/.config/hypr/monitors.conf`
-- Add wallpaper config at `~/.config/hypr/hyprpaper.conf`

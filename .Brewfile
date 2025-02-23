@@ -1,7 +1,6 @@
 brew "ripgrep"
 brew "asdf"
 brew "helix", args: ["HEAD"]
-brew "ctags"
 brew "coreutils"
 brew "jq"
 brew "bat"
@@ -12,3 +11,4 @@ brew "zoxide"
 brew "fd"
 brew "serpl"
 brew "just"
+brew "rsync"
