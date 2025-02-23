@@ -8,3 +8,6 @@ Command=/bin/zsh
 DimWhenInactive=false
 Name=Loonks Profile
 Parent=FALLBACK/
+
+[Scrolling]
+HistoryMode=2

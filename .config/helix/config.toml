@@ -27,9 +27,18 @@ down = "no_op"
 left = "no_op"
 right = "no_op"
 
-# Disable arrows for normal mode
 [keys.normal]
+# Disable arrows for normal mode
 up = "no_op"
 down = "no_op"
 left = "no_op"
 right = "no_op"
+
+# Subword navigation
+A-w = "move_next_sub_word_start"
+A-b = "move_prev_sub_word_end"
+
+[keys.select]
+# Subword navigation
+A-w = "extend_next_sub_word_start"
+A-b = "extend_prev_sub_word_end"
