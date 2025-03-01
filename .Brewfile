@@ -1,3 +1,4 @@
+brew "fish"
 brew "ripgrep"
 brew "asdf"
 brew "helix", args: ["HEAD"]
