@@ -6,13 +6,6 @@ system_type=$(uname -s)
 
 # Only for macOS
 if [ "$system_type" = "Darwin" ]; then
-  # install homebrew if it's missing
-  if ! command -v brew >/dev/null 2>&1; then
-    echo "Installing homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    echo
-  fi
-
   if [ -f "$HOME/.Brewfile" ]; then
     echo "Updating homebrew bundle"
     brew bundle --global
@@ -20,17 +13,7 @@ if [ "$system_type" = "Darwin" ]; then
   fi
 fi
 
-# Install antigen at .antigen/antigen.zsh
-if [ ! -f "$HOME/.antigen/antigen.zsh" ]; then
-  echo "Installing antigen"
+echo "Launching fish boostrap"
+fish $HOME/.config/yadm/bootstrap.fish
 
-  mkdir -p $HOME/.antigen
-  curl -L git.io/antigen > $HOME/.antigen/antigen.zsh
-  echo
-fi
-
-echo "[!] Restart terminal for changes to take effect"
-
-if [ "$system_type" = "Darwin" ]; then
-  echo "[!] Then run this: compaudit | xargs chmod g-w"
-fi
+echo "[!] Change your shell to fish now and restart the terminal"

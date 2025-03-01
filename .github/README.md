@@ -3,10 +3,10 @@ dotfiles
 
 # Requirements:
 
+- fish
 - rust
 - zellij
 - helix
-- zsh
 - Wezterm
 - brew (mac only)
 - yadm
@@ -35,7 +35,8 @@ yadm bootstrap
 
 Bootstrap will:
 
-- Install antigen at `~/.antigen/antigen.zsh`
+- Set fish theme
+- Install fisher and plugins
 
 On macOS:
 
