@@ -27,11 +27,16 @@ function fish_prompt --description 'Write out the prompt'
     set -l statusb_color (set_color $bold_flag $fish_color_status)
     set -l prompt_status (__fish_print_pipestatus "(" ")" "|" "$status_color" "$statusb_color" $last_pipestatus)
 
+    # Configure git prompt
     set -g __fish_git_prompt_showcolorhints yes
-    set -g __fish_git_prompt_show_informative_status yes
+    set -g __fish_git_prompt_showdirtystate yes
     set -g __fish_git_prompt_showuntrackedfiles yes
+    # TRACK: https://github.com/fish-shell/fish-shell/issues/11199
+    # set -g __fish_git_prompt_show_informative_status yes
     set -g __fish_git_prompt_char_cleanstate ''
     set -g __fish_git_prompt_char_stateseparator /
+    set -g __fish_git_prompt_color_branch_dirty red
+    set -g __fish_git_prompt_color_branch_staged yellow
 
     echo -n -s ▲' ' (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end
