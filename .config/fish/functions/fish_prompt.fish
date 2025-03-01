@@ -29,7 +29,9 @@ function fish_prompt --description 'Write out the prompt'
 
     set -g __fish_git_prompt_showcolorhints yes
     set -g __fish_git_prompt_show_informative_status yes
+    set -g __fish_git_prompt_showuntrackedfiles yes
     set -g __fish_git_prompt_char_cleanstate ''
+    set -g __fish_git_prompt_char_stateseparator /
 
-    echo -n -s ▲' ' (prompt_pwd) $normal (fish_vcs_prompt " [%s]") $normal " "$prompt_status $suffix " "
+    echo -n -s ▲' ' (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end
