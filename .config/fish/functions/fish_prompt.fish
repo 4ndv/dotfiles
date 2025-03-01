@@ -28,8 +28,8 @@ function fish_prompt --description 'Write out the prompt'
     set -l prompt_status (__fish_print_pipestatus "(" ")" "|" "$status_color" "$statusb_color" $last_pipestatus)
 
     set -g __fish_git_prompt_showcolorhints yes
-    # set -g __fish_git_prompt_showdirtystate yes
     set -g __fish_git_prompt_show_informative_status yes
+    set -g __fish_git_prompt_char_cleanstate ''
 
     echo -n -s ▲' ' (prompt_pwd) $normal (fish_vcs_prompt " [%s]") $normal " "$prompt_status $suffix " "
 end
