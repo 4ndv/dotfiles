@@ -16,6 +16,9 @@ end
 # Add cargo to path
 fish_add_path ~/.cargo/bin
 
+# Add pipx to path
+fish_add_path ~/.local/bin
+
 # Init zoxide
 zoxide init fish | source
 
@@ -30,5 +33,9 @@ if status is-interactive
     # mac-specific abbrs
     if test "$os" = Darwin
         abbr --add bs brew services
+    end
+
+    if [ "$TERM" = alacritty ]
+        eval (zellij setup --generate-auto-start fish | string collect)
     end
 end
