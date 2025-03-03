@@ -16,8 +16,11 @@ end
 # Add cargo to path
 fish_add_path ~/.cargo/bin
 
-# Add pipx to path
+# Add .local/bin to path
 fish_add_path ~/.local/bin
+
+# Init asdf
+setup_asdf
 
 # Init zoxide
 zoxide init fish | source
