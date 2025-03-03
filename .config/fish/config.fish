@@ -23,6 +23,7 @@ fish_add_path ~/.local/bin
 zoxide init fish | source
 
 if status is-interactive
+    abbr --add j just
     abbr --add lg lazygit
     abbr --add yalg yadm enter lazygit
 
