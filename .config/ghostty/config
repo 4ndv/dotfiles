@@ -1,0 +1,8 @@
+theme = chalk_base16
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+font-family = "FiraCode Nerd Font Mono"
+font-size = 14
