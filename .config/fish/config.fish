@@ -4,6 +4,9 @@ set -l os (uname)
 # Set Ctrl-C to previous behavior
 bind -a ctrl-c cancel-commandline
 
+# Disable path underline
+set fish_color_valid_path
+
 # Set editors
 set -gx EDITOR hx
 set -gx BUNDLE_EDITOR hx
