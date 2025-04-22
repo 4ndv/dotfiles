@@ -1,0 +1,21 @@
+{
+  :devices {
+    :built-in [{:vendor_id 1452 :product_id 641}]
+  }
+
+  :layers {
+    :capslock-mode {:key :caps_lock :alone {:key :escape}}
+  }
+
+  :main [
+    {:des "CAPS LOCK - arrow movement [hjkl], otherwise Escape"
+      :rules [
+        :capslock-mode
+          [:##h :left_arrow]
+          [:##j :down_arrow]
+          [:##k :up_arrow]
+          [:##l :right_arrow]
+      ]
+    }
+  ]
+}
