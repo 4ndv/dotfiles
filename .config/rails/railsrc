@@ -1,0 +1,5 @@
+--database=postgresql
+--skip-test
+--skip-jbuilder
+--skip-asset-pipeline
+--skip-ci
