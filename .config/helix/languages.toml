@@ -2,9 +2,15 @@
 command = "bundle"
 args = ["exec", "rubocop", "--lsp"]
 
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
+
 [[language]]
 name = "ruby"
 auto-format = true
-language-servers = [
-  { name = "rubocop" }
-]
+language-servers = ["ruby-lsp", "solargraph", "rubocop"]
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman", "markdown-oxide", "harper-ls"]
