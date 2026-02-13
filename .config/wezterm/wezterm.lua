@@ -53,7 +53,31 @@ local keys = {
     action = act {
       SendString = "\x1bf"
     }
-  }
+  },
+  -- Super+- for moving to a previous tab
+  {
+    key = '-',
+    mods = 'SUPER',
+    action = act.ActivateTabRelative(-1)
+  },
+  -- Super+= for moving to a next tab
+  {
+    key = '=',
+    mods = 'SUPER',
+    action = act.ActivateTabRelative(1)
+  },
+  -- Ctrl+Super+- for zooming out
+  {
+    key = '-',
+    mods = 'SUPER|CTRL',
+    action = act.DecreaseFontSize
+  },
+  -- Ctrl+Super+= for zooming in
+  {
+    key = '=',
+    mods = 'SUPER|CTRL',
+    action = act.IncreaseFontSize
+  },
 }
 
 if is_linux() then
@@ -66,7 +90,7 @@ if is_linux() then
     { key = '6', mods = 'ALT', action = act.ActivateTab(5) },
     { key = '7', mods = 'ALT', action = act.ActivateTab(6) },
     { key = '8', mods = 'ALT', action = act.ActivateTab(7) },
-    { key = '9', mods = 'ALT', action = act.ActivateTab(-1) },
+    { key = '9', mods = 'ALT', action = act.ActivateTab(8) },
     table.unpack(keys)
   }
 else
