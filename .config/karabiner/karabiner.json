@@ -121,6 +121,14 @@
                             "to": [{ "key_code": "right_alt" }]
                         }
                     ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 320,
+                        "vendor_id": 13364
+                    },
+                    "ignore": true
                 }
             ],
             "name": "Default",
