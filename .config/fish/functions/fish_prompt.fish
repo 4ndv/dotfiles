@@ -1,6 +1,8 @@
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
+    set -l prefix_color (set_color white --bold)
+    set -l pwd_color (set_color white --bold)
     set -l normal (set_color normal)
     set -q fish_color_status
     or set -g fish_color_status red
@@ -13,6 +15,13 @@ function fish_prompt --description 'Write out the prompt'
             set color_cwd $fish_color_cwd_root
         end
         set suffix '#'
+    end
+
+    # When running inside SSH session, append hostname
+    set -l prompt_hostname ''
+    if set -q SSH_TTY
+        set prompt_hostname "ssh://$hostname "
+        set prefix_color (set_color purple --bold)
     end
 
     # Write pipestatus
@@ -39,5 +48,5 @@ function fish_prompt --description 'Write out the prompt'
     set -g __fish_git_prompt_color_branch_detached magenta
     set -g __fish_git_prompt_color_branch_staged yellow
 
-    echo -n -s (set_color white --bold) "▲ " (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
+    echo -n -s $prefix_color "▲ " $prompt_hostname $pwd_color (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
 end
