@@ -22,6 +22,10 @@ fish_add_path ~/.cargo/bin
 # Add .local/bin to path
 fish_add_path ~/.local/bin
 
+# Configure bun
+set -gx BUN_INSTALL "$HOME/.bun"
+fish_add_path "$BUN_INSTALL/bin"
+
 # Init asdf
 setup_asdf
 
