@@ -12,3 +12,5 @@ brew "zoxide"
 brew "fd"
 brew "scooter"
 brew "just"
+
+cask "font-iosevka-etoile"
