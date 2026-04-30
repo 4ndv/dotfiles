@@ -15,8 +15,7 @@ dotfiles
 - zoxide
 - fd
 - ripgrep
-- serpl
-- rsync
+- scooter
 
 # MacOS-related dependencies and configs
 
