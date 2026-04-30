@@ -3,3 +3,5 @@
 --skip-jbuilder
 --skip-asset-pipeline
 --skip-ci
+--skip-kamal
+--skip-solid
