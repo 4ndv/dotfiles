@@ -1,7 +1,7 @@
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
-    set -l prefix_color (set_color white)
+    set -l prefix_color (set_color white --bold)
     set -l pwd_color (set_color white --bold)
     set -l normal (set_color normal)
     set -q fish_color_status
@@ -13,14 +13,15 @@ function fish_prompt --description 'Write out the prompt'
     if functions -q fish_is_root_user; and fish_is_root_user
         if set -q fish_color_cwd_root
             set color_cwd $fish_color_cwd_root
+            set pwd_color (set_color $color_cwd --bold)
         end
-        set suffix '#'
+        set suffix ' #'
     end
 
     # When running inside SSH session, append ssh://
     if set -q SSH_TTY
         set pr_hostname "ssh://$hostname"
-        set prefix_color (set_color purple)
+        set prefix_color (set_color purple --bold)
     else
         set pr_hostname (prompt_hostname)
     end
