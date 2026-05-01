@@ -13,4 +13,7 @@ brew "fd"
 brew "scooter"
 brew "just"
 
+cask "font-fira-code"
+cask "font-iosevka"
 cask "font-iosevka-etoile"
+cask "font-jetbrains-mono"
