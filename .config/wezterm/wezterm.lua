@@ -6,14 +6,12 @@ local is_linux = function()
   return wezterm.target_triple:find("linux") ~= nil
 end
 
-config.window_background_opacity = 0.98
-
 -- waiting for scaling to be fixed for that to properly work
 -- if is_linux() then
 --   config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 -- end
 
-config.font = wezterm.font 'Fira Code'
+config.font = wezterm.font 'JetBrains Mono Semibold'
 -- On Linux font_size is weirdly affected by scaling
 config.font_size = is_linux() and 14.0 or 18.0
 
