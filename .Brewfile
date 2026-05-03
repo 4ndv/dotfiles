@@ -12,6 +12,7 @@ brew "zoxide"
 brew "fd"
 brew "scooter"
 brew "just"
+brew "zellij"
 
 cask "font-fira-code"
 cask "font-iosevka"
