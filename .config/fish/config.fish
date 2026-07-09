@@ -26,6 +26,10 @@ fish_add_path ~/.local/bin
 set -gx BUN_INSTALL "$HOME/.bun"
 fish_add_path "$BUN_INSTALL/bin"
 
+# Configure go
+set -gx GOPATH "$HOME/go"
+fish_add_path ~/go/bin
+
 # Init asdf
 setup_asdf
 
