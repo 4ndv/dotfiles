@@ -6,6 +6,10 @@ args = ["exec", "rubocop", "--lsp"]
 command = "harper-ls"
 args = ["--stdio"]
 
+[language-server.harper-ls.config.harper-ls.linters]
+AvoidCurses = false
+UseTitleCase = false
+
 [[language]]
 name = "ruby"
 auto-format = true
