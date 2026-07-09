@@ -1,0 +1,7 @@
+[user]
+	name = Andrey Viktorov
+	email = loonks@disroot.org
+[alias]
+	purr = pull --rebase
+[init]
+	defaultBranch = main
